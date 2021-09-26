@@ -21,7 +21,18 @@ javascript პროგრამამ ციკლის მეშვეობ�
 		 </a></h1>
 	  </section>
 	<script>
-		
+
+		for(let i = 0; i < 5; i++) {
+		  const img = document.createElement("img");
+		  img.src = "photo/run-1.jpg" + i;
+		  img.classList.add("img-margin");
+		  img.addEventListener("click", function() {
+		   img.classList.add("img-rounded-border");
+  })
+  document.body.appendChild(img);
+}
+
+
 	</script>
 
 </body>
