@@ -21,11 +21,21 @@ _data საქაღალდეში მოთავსებული css-st
 		 	მეორე თავსატეხი 
 		 </a></h1>
 	  </section>
- <section class="block-border">
- 	<div class="box"></div>
- </section>
- <script type="js/java.js"></script>
+		<script>
+	  var top_start = 0;
+	var top_indent = 30;
+	var margin1 =60;
+	var left_start = 0;
+	var left_indent = 100;
 
+	document.write('<div class="sequence">');
+	for (var i = 0; i < 5; i++) {
+		document.write('<div class="item" style="left: ' + left_start + 'px; top: ' + top_start + 'px; bottom: '+ margin1 +' px;">ბლოკი</div>');
+		left_start = left_start + left_indent;
+		top_start = top_start + top_indent;
+	}
+	document.write('</div>');
+</script>
 
 </body>
 </html>
